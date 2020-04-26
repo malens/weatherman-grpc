@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "edu.malens.grpc";
+option java_outer_classname = "WeatherProto";
+option objc_class_prefix = "WP";
+
+enum WeatherState {
+  CLEAR = 0;
+  CLOUDY = 1;
+  RAIN = 2;
+  SNOW = 3;
+}
+
+message Date {
+  int32 day = 1;
+  int32 month = 2;
+  int32 year = 3;
+}
+
+message WeatherRequest {
+  string city = 1;
+  repeated Date date = 2;
+}
+
+message WeatherDay {
+  Date date = 1;
+  WeatherState state = 2;
+}
+
+message WeatherResponse {
+  string city = 1;
+  repeated WeatherDay weather = 2;
+}
+
+message City {
+  string name = 1;
+}
+
+service Weather {
+  rpc subscribe(City) returns (stream WeatherResponse);
+}
