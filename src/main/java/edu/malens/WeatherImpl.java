@@ -11,8 +11,14 @@ import java.util.concurrent.BlockingQueue;
 public class WeatherImpl extends WeatherGrpc.WeatherImplBase {
 
     @Override
+    public void testget(City request, StreamObserver<WeatherResponse> responseObserver) {
+        responseObserver.onNext(WeatherResponse.newBuilder().setCity(request.getName()).build());
+        responseObserver.onCompleted();
+    }
+
+    @Override
     public void subscribe(City request, StreamObserver<WeatherResponse> responseObserver) {
-        System.out.println(request);
+        System.err.println(request);
         BlockingQueue<WeatherResponse> q = WeatherData.getInstance().subscribe(request.getName());
         while(true){
             try {

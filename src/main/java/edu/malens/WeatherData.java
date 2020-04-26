@@ -2,18 +2,21 @@ package edu.malens;
 
 import edu.malens.grpc.*;
 import edu.malens.grpc.Date;
-import jdk.nashorn.internal.ir.Block;
 
 import java.time.LocalDate;
 import java.util.*;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class WeatherData {
     private static WeatherData dataInstance = new WeatherData();
 
     private Random random = new Random();
+
+    private static final Logger logger = Logger.getLogger(WeatherData.class.getName());
 
     public static WeatherData getInstance(){
         return dataInstance;
@@ -33,6 +36,7 @@ public class WeatherData {
         weather.keySet().forEach(k -> {
             queues.put(k, new LinkedList<>());
         });
+        logger.info("XD");
         this.weather.keySet().parallelStream().forEach(city -> new Thread(() -> updateWeather(city)).start());
     }
 
@@ -88,9 +92,11 @@ public class WeatherData {
     }
 
     private void updateWeather(String city){
+        System.err.println("started updating weather");
+        System.err.flush();
         while (true) {
             try {
-                Thread.sleep(5000 + random.nextInt(5000));
+                Thread.sleep(50 + random.nextInt(50));
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
