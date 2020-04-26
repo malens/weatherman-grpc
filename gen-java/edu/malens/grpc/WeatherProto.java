@@ -56,9 +56,10 @@ public final class WeatherProto {
       "Response\022\014\n\004city\030\001 \001(\t\022\034\n\007weather\030\002 \003(\0132" +
       "\013.WeatherDay\"\024\n\004City\022\014\n\004name\030\001 \001(\t*9\n\014We" +
       "atherState\022\t\n\005CLEAR\020\000\022\n\n\006CLOUDY\020\001\022\010\n\004RAI" +
-      "N\020\002\022\010\n\004SNOW\020\00321\n\007Weather\022&\n\tsubscribe\022\005." +
-      "City\032\020.WeatherResponse0\001B&\n\017edu.malens.g" +
-      "rpcB\014WeatherProtoP\001\242\002\002WPb\006proto3"
+      "N\020\002\022\010\n\004SNOW\020\0032U\n\007Weather\022&\n\tsubscribe\022\005." +
+      "City\032\020.WeatherResponse0\001\022\"\n\007testget\022\005.Ci" +
+      "ty\032\020.WeatherResponseB&\n\017edu.malens.grpcB" +
+      "\014WeatherProtoP\001\242\002\002WPb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,

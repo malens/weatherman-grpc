@@ -39,4 +39,5 @@ message City {
 
 service Weather {
   rpc subscribe(City) returns (stream WeatherResponse);
+  rpc testget(City) returns (WeatherResponse);
 }

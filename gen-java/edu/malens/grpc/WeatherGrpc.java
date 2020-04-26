@@ -58,6 +58,37 @@ public final class WeatherGrpc {
     return getSubscribeMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<edu.malens.grpc.City,
+      edu.malens.grpc.WeatherResponse> getTestgetMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "testget",
+      requestType = edu.malens.grpc.City.class,
+      responseType = edu.malens.grpc.WeatherResponse.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<edu.malens.grpc.City,
+      edu.malens.grpc.WeatherResponse> getTestgetMethod() {
+    io.grpc.MethodDescriptor<edu.malens.grpc.City, edu.malens.grpc.WeatherResponse> getTestgetMethod;
+    if ((getTestgetMethod = WeatherGrpc.getTestgetMethod) == null) {
+      synchronized (WeatherGrpc.class) {
+        if ((getTestgetMethod = WeatherGrpc.getTestgetMethod) == null) {
+          WeatherGrpc.getTestgetMethod = getTestgetMethod =
+              io.grpc.MethodDescriptor.<edu.malens.grpc.City, edu.malens.grpc.WeatherResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "testget"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  edu.malens.grpc.City.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  edu.malens.grpc.WeatherResponse.getDefaultInstance()))
+              .setSchemaDescriptor(new WeatherMethodDescriptorSupplier("testget"))
+              .build();
+        }
+      }
+    }
+    return getTestgetMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -113,6 +144,13 @@ public final class WeatherGrpc {
       asyncUnimplementedUnaryCall(getSubscribeMethod(), responseObserver);
     }
 
+    /**
+     */
+    public void testget(edu.malens.grpc.City request,
+        io.grpc.stub.StreamObserver<edu.malens.grpc.WeatherResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getTestgetMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -122,6 +160,13 @@ public final class WeatherGrpc {
                 edu.malens.grpc.City,
                 edu.malens.grpc.WeatherResponse>(
                   this, METHODID_SUBSCRIBE)))
+          .addMethod(
+            getTestgetMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                edu.malens.grpc.City,
+                edu.malens.grpc.WeatherResponse>(
+                  this, METHODID_TESTGET)))
           .build();
     }
   }
@@ -147,6 +192,14 @@ public final class WeatherGrpc {
       asyncServerStreamingCall(
           getChannel().newCall(getSubscribeMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public void testget(edu.malens.grpc.City request,
+        io.grpc.stub.StreamObserver<edu.malens.grpc.WeatherResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getTestgetMethod(), getCallOptions()), request, responseObserver);
+    }
   }
 
   /**
@@ -170,6 +223,13 @@ public final class WeatherGrpc {
       return blockingServerStreamingCall(
           getChannel(), getSubscribeMethod(), getCallOptions(), request);
     }
+
+    /**
+     */
+    public edu.malens.grpc.WeatherResponse testget(edu.malens.grpc.City request) {
+      return blockingUnaryCall(
+          getChannel(), getTestgetMethod(), getCallOptions(), request);
+    }
   }
 
   /**
@@ -185,9 +245,18 @@ public final class WeatherGrpc {
         io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
       return new WeatherFutureStub(channel, callOptions);
     }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<edu.malens.grpc.WeatherResponse> testget(
+        edu.malens.grpc.City request) {
+      return futureUnaryCall(
+          getChannel().newCall(getTestgetMethod(), getCallOptions()), request);
+    }
   }
 
   private static final int METHODID_SUBSCRIBE = 0;
+  private static final int METHODID_TESTGET = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -208,6 +277,10 @@ public final class WeatherGrpc {
       switch (methodId) {
         case METHODID_SUBSCRIBE:
           serviceImpl.subscribe((edu.malens.grpc.City) request,
+              (io.grpc.stub.StreamObserver<edu.malens.grpc.WeatherResponse>) responseObserver);
+          break;
+        case METHODID_TESTGET:
+          serviceImpl.testget((edu.malens.grpc.City) request,
               (io.grpc.stub.StreamObserver<edu.malens.grpc.WeatherResponse>) responseObserver);
           break;
         default:
@@ -272,6 +345,7 @@ public final class WeatherGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new WeatherFileDescriptorSupplier())
               .addMethod(getSubscribeMethod())
+              .addMethod(getTestgetMethod())
               .build();
         }
       }
