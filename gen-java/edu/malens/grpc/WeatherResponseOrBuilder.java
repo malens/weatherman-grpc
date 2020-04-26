@@ -4,7 +4,7 @@
 package edu.malens.grpc;
 
 public interface WeatherResponseOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:WeatherResponse)
+    // @@protoc_insertion_point(interface_extends:weatherproto.WeatherResponse)
     com.google.protobuf.MessageOrBuilder {
 
   /**
@@ -20,25 +20,25 @@ public interface WeatherResponseOrBuilder extends
       getCityBytes();
 
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   java.util.List<edu.malens.grpc.WeatherDay> 
       getWeatherList();
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   edu.malens.grpc.WeatherDay getWeather(int index);
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   int getWeatherCount();
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   java.util.List<? extends edu.malens.grpc.WeatherDayOrBuilder> 
       getWeatherOrBuilderList();
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   edu.malens.grpc.WeatherDayOrBuilder getWeatherOrBuilder(
       int index);

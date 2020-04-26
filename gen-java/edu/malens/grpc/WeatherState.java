@@ -4,7 +4,7 @@
 package edu.malens.grpc;
 
 /**
- * Protobuf enum {@code WeatherState}
+ * Protobuf enum {@code weatherproto.WeatherState}
  */
 public enum WeatherState
     implements com.google.protobuf.ProtocolMessageEnum {
@@ -122,6 +122,6 @@ public enum WeatherState
     this.value = value;
   }
 
-  // @@protoc_insertion_point(enum_scope:WeatherState)
+  // @@protoc_insertion_point(enum_scope:weatherproto.WeatherState)
 }
 

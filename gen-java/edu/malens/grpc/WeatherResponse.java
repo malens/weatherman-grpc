@@ -4,11 +4,11 @@
 package edu.malens.grpc;
 
 /**
- * Protobuf type {@code WeatherResponse}
+ * Protobuf type {@code weatherproto.WeatherResponse}
  */
 public  final class WeatherResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:WeatherResponse)
+    // @@protoc_insertion_point(message_implements:weatherproto.WeatherResponse)
     WeatherResponseOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use WeatherResponse.newBuilder() to construct.
@@ -90,13 +90,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return edu.malens.grpc.WeatherProto.internal_static_WeatherResponse_descriptor;
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherResponse_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return edu.malens.grpc.WeatherProto.internal_static_WeatherResponse_fieldAccessorTable
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             edu.malens.grpc.WeatherResponse.class, edu.malens.grpc.WeatherResponse.Builder.class);
   }
@@ -140,32 +140,32 @@ private static final long serialVersionUID = 0L;
   public static final int WEATHER_FIELD_NUMBER = 2;
   private java.util.List<edu.malens.grpc.WeatherDay> weather_;
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   public java.util.List<edu.malens.grpc.WeatherDay> getWeatherList() {
     return weather_;
   }
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   public java.util.List<? extends edu.malens.grpc.WeatherDayOrBuilder> 
       getWeatherOrBuilderList() {
     return weather_;
   }
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   public int getWeatherCount() {
     return weather_.size();
   }
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   public edu.malens.grpc.WeatherDay getWeather(int index) {
     return weather_.get(index);
   }
   /**
-   * <code>repeated .WeatherDay weather = 2;</code>
+   * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
    */
   public edu.malens.grpc.WeatherDayOrBuilder getWeatherOrBuilder(
       int index) {
@@ -340,21 +340,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code WeatherResponse}
+   * Protobuf type {@code weatherproto.WeatherResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:WeatherResponse)
+      // @@protoc_insertion_point(builder_implements:weatherproto.WeatherResponse)
       edu.malens.grpc.WeatherResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherResponse_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherResponse_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherResponse_fieldAccessorTable
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               edu.malens.grpc.WeatherResponse.class, edu.malens.grpc.WeatherResponse.Builder.class);
     }
@@ -392,7 +392,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherResponse_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherResponse_descriptor;
     }
 
     @java.lang.Override
@@ -620,7 +620,7 @@ private static final long serialVersionUID = 0L;
         edu.malens.grpc.WeatherDay, edu.malens.grpc.WeatherDay.Builder, edu.malens.grpc.WeatherDayOrBuilder> weatherBuilder_;
 
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public java.util.List<edu.malens.grpc.WeatherDay> getWeatherList() {
       if (weatherBuilder_ == null) {
@@ -630,7 +630,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public int getWeatherCount() {
       if (weatherBuilder_ == null) {
@@ -640,7 +640,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public edu.malens.grpc.WeatherDay getWeather(int index) {
       if (weatherBuilder_ == null) {
@@ -650,7 +650,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder setWeather(
         int index, edu.malens.grpc.WeatherDay value) {
@@ -667,7 +667,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder setWeather(
         int index, edu.malens.grpc.WeatherDay.Builder builderForValue) {
@@ -681,7 +681,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder addWeather(edu.malens.grpc.WeatherDay value) {
       if (weatherBuilder_ == null) {
@@ -697,7 +697,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder addWeather(
         int index, edu.malens.grpc.WeatherDay value) {
@@ -714,7 +714,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder addWeather(
         edu.malens.grpc.WeatherDay.Builder builderForValue) {
@@ -728,7 +728,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder addWeather(
         int index, edu.malens.grpc.WeatherDay.Builder builderForValue) {
@@ -742,7 +742,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder addAllWeather(
         java.lang.Iterable<? extends edu.malens.grpc.WeatherDay> values) {
@@ -757,7 +757,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder clearWeather() {
       if (weatherBuilder_ == null) {
@@ -770,7 +770,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public Builder removeWeather(int index) {
       if (weatherBuilder_ == null) {
@@ -783,14 +783,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public edu.malens.grpc.WeatherDay.Builder getWeatherBuilder(
         int index) {
       return getWeatherFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public edu.malens.grpc.WeatherDayOrBuilder getWeatherOrBuilder(
         int index) {
@@ -800,7 +800,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public java.util.List<? extends edu.malens.grpc.WeatherDayOrBuilder> 
          getWeatherOrBuilderList() {
@@ -811,14 +811,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public edu.malens.grpc.WeatherDay.Builder addWeatherBuilder() {
       return getWeatherFieldBuilder().addBuilder(
           edu.malens.grpc.WeatherDay.getDefaultInstance());
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public edu.malens.grpc.WeatherDay.Builder addWeatherBuilder(
         int index) {
@@ -826,7 +826,7 @@ private static final long serialVersionUID = 0L;
           index, edu.malens.grpc.WeatherDay.getDefaultInstance());
     }
     /**
-     * <code>repeated .WeatherDay weather = 2;</code>
+     * <code>repeated .weatherproto.WeatherDay weather = 2;</code>
      */
     public java.util.List<edu.malens.grpc.WeatherDay.Builder> 
          getWeatherBuilderList() {
@@ -859,10 +859,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:WeatherResponse)
+    // @@protoc_insertion_point(builder_scope:weatherproto.WeatherResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:WeatherResponse)
+  // @@protoc_insertion_point(class_scope:weatherproto.WeatherResponse)
   private static final edu.malens.grpc.WeatherResponse DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new edu.malens.grpc.WeatherResponse();

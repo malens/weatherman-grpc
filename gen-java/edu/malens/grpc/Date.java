@@ -4,11 +4,11 @@
 package edu.malens.grpc;
 
 /**
- * Protobuf type {@code Date}
+ * Protobuf type {@code weatherproto.Date}
  */
 public  final class Date extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:Date)
+    // @@protoc_insertion_point(message_implements:weatherproto.Date)
     DateOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use Date.newBuilder() to construct.
@@ -84,13 +84,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return edu.malens.grpc.WeatherProto.internal_static_Date_descriptor;
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_Date_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return edu.malens.grpc.WeatherProto.internal_static_Date_fieldAccessorTable
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_Date_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             edu.malens.grpc.Date.class, edu.malens.grpc.Date.Builder.class);
   }
@@ -303,21 +303,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code Date}
+   * Protobuf type {@code weatherproto.Date}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:Date)
+      // @@protoc_insertion_point(builder_implements:weatherproto.Date)
       edu.malens.grpc.DateOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return edu.malens.grpc.WeatherProto.internal_static_Date_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_Date_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return edu.malens.grpc.WeatherProto.internal_static_Date_fieldAccessorTable
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_Date_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               edu.malens.grpc.Date.class, edu.malens.grpc.Date.Builder.class);
     }
@@ -352,7 +352,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return edu.malens.grpc.WeatherProto.internal_static_Date_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_Date_descriptor;
     }
 
     @java.lang.Override
@@ -563,10 +563,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:Date)
+    // @@protoc_insertion_point(builder_scope:weatherproto.Date)
   }
 
-  // @@protoc_insertion_point(class_scope:Date)
+  // @@protoc_insertion_point(class_scope:weatherproto.Date)
   private static final edu.malens.grpc.Date DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new edu.malens.grpc.Date();

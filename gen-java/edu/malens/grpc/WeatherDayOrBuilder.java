@@ -4,31 +4,31 @@
 package edu.malens.grpc;
 
 public interface WeatherDayOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:WeatherDay)
+    // @@protoc_insertion_point(interface_extends:weatherproto.WeatherDay)
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>.Date date = 1;</code>
+   * <code>.weatherproto.Date date = 1;</code>
    * @return Whether the date field is set.
    */
   boolean hasDate();
   /**
-   * <code>.Date date = 1;</code>
+   * <code>.weatherproto.Date date = 1;</code>
    * @return The date.
    */
   edu.malens.grpc.Date getDate();
   /**
-   * <code>.Date date = 1;</code>
+   * <code>.weatherproto.Date date = 1;</code>
    */
   edu.malens.grpc.DateOrBuilder getDateOrBuilder();
 
   /**
-   * <code>.WeatherState state = 2;</code>
+   * <code>.weatherproto.WeatherState state = 2;</code>
    * @return The enum numeric value on the wire for state.
    */
   int getStateValue();
   /**
-   * <code>.WeatherState state = 2;</code>
+   * <code>.weatherproto.WeatherState state = 2;</code>
    * @return The state.
    */
   edu.malens.grpc.WeatherState getState();

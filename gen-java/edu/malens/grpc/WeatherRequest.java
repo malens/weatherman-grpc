@@ -4,11 +4,11 @@
 package edu.malens.grpc;
 
 /**
- * Protobuf type {@code WeatherRequest}
+ * Protobuf type {@code weatherproto.WeatherRequest}
  */
 public  final class WeatherRequest extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:WeatherRequest)
+    // @@protoc_insertion_point(message_implements:weatherproto.WeatherRequest)
     WeatherRequestOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use WeatherRequest.newBuilder() to construct.
@@ -90,13 +90,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return edu.malens.grpc.WeatherProto.internal_static_WeatherRequest_descriptor;
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherRequest_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return edu.malens.grpc.WeatherProto.internal_static_WeatherRequest_fieldAccessorTable
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherRequest_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             edu.malens.grpc.WeatherRequest.class, edu.malens.grpc.WeatherRequest.Builder.class);
   }
@@ -140,32 +140,32 @@ private static final long serialVersionUID = 0L;
   public static final int DATE_FIELD_NUMBER = 2;
   private java.util.List<edu.malens.grpc.Date> date_;
   /**
-   * <code>repeated .Date date = 2;</code>
+   * <code>repeated .weatherproto.Date date = 2;</code>
    */
   public java.util.List<edu.malens.grpc.Date> getDateList() {
     return date_;
   }
   /**
-   * <code>repeated .Date date = 2;</code>
+   * <code>repeated .weatherproto.Date date = 2;</code>
    */
   public java.util.List<? extends edu.malens.grpc.DateOrBuilder> 
       getDateOrBuilderList() {
     return date_;
   }
   /**
-   * <code>repeated .Date date = 2;</code>
+   * <code>repeated .weatherproto.Date date = 2;</code>
    */
   public int getDateCount() {
     return date_.size();
   }
   /**
-   * <code>repeated .Date date = 2;</code>
+   * <code>repeated .weatherproto.Date date = 2;</code>
    */
   public edu.malens.grpc.Date getDate(int index) {
     return date_.get(index);
   }
   /**
-   * <code>repeated .Date date = 2;</code>
+   * <code>repeated .weatherproto.Date date = 2;</code>
    */
   public edu.malens.grpc.DateOrBuilder getDateOrBuilder(
       int index) {
@@ -340,21 +340,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code WeatherRequest}
+   * Protobuf type {@code weatherproto.WeatherRequest}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:WeatherRequest)
+      // @@protoc_insertion_point(builder_implements:weatherproto.WeatherRequest)
       edu.malens.grpc.WeatherRequestOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherRequest_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherRequest_fieldAccessorTable
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               edu.malens.grpc.WeatherRequest.class, edu.malens.grpc.WeatherRequest.Builder.class);
     }
@@ -392,7 +392,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherRequest_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherRequest_descriptor;
     }
 
     @java.lang.Override
@@ -620,7 +620,7 @@ private static final long serialVersionUID = 0L;
         edu.malens.grpc.Date, edu.malens.grpc.Date.Builder, edu.malens.grpc.DateOrBuilder> dateBuilder_;
 
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public java.util.List<edu.malens.grpc.Date> getDateList() {
       if (dateBuilder_ == null) {
@@ -630,7 +630,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public int getDateCount() {
       if (dateBuilder_ == null) {
@@ -640,7 +640,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public edu.malens.grpc.Date getDate(int index) {
       if (dateBuilder_ == null) {
@@ -650,7 +650,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder setDate(
         int index, edu.malens.grpc.Date value) {
@@ -667,7 +667,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder setDate(
         int index, edu.malens.grpc.Date.Builder builderForValue) {
@@ -681,7 +681,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder addDate(edu.malens.grpc.Date value) {
       if (dateBuilder_ == null) {
@@ -697,7 +697,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder addDate(
         int index, edu.malens.grpc.Date value) {
@@ -714,7 +714,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder addDate(
         edu.malens.grpc.Date.Builder builderForValue) {
@@ -728,7 +728,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder addDate(
         int index, edu.malens.grpc.Date.Builder builderForValue) {
@@ -742,7 +742,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder addAllDate(
         java.lang.Iterable<? extends edu.malens.grpc.Date> values) {
@@ -757,7 +757,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder clearDate() {
       if (dateBuilder_ == null) {
@@ -770,7 +770,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public Builder removeDate(int index) {
       if (dateBuilder_ == null) {
@@ -783,14 +783,14 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public edu.malens.grpc.Date.Builder getDateBuilder(
         int index) {
       return getDateFieldBuilder().getBuilder(index);
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public edu.malens.grpc.DateOrBuilder getDateOrBuilder(
         int index) {
@@ -800,7 +800,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public java.util.List<? extends edu.malens.grpc.DateOrBuilder> 
          getDateOrBuilderList() {
@@ -811,14 +811,14 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public edu.malens.grpc.Date.Builder addDateBuilder() {
       return getDateFieldBuilder().addBuilder(
           edu.malens.grpc.Date.getDefaultInstance());
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public edu.malens.grpc.Date.Builder addDateBuilder(
         int index) {
@@ -826,7 +826,7 @@ private static final long serialVersionUID = 0L;
           index, edu.malens.grpc.Date.getDefaultInstance());
     }
     /**
-     * <code>repeated .Date date = 2;</code>
+     * <code>repeated .weatherproto.Date date = 2;</code>
      */
     public java.util.List<edu.malens.grpc.Date.Builder> 
          getDateBuilderList() {
@@ -859,10 +859,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:WeatherRequest)
+    // @@protoc_insertion_point(builder_scope:weatherproto.WeatherRequest)
   }
 
-  // @@protoc_insertion_point(class_scope:WeatherRequest)
+  // @@protoc_insertion_point(class_scope:weatherproto.WeatherRequest)
   private static final edu.malens.grpc.WeatherRequest DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new edu.malens.grpc.WeatherRequest();

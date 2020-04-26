@@ -24,7 +24,7 @@ public final class WeatherGrpc {
 
   private WeatherGrpc() {}
 
-  public static final String SERVICE_NAME = "Weather";
+  public static final String SERVICE_NAME = "weatherproto.Weather";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<edu.malens.grpc.City,

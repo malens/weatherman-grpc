@@ -4,7 +4,7 @@
 package edu.malens.grpc;
 
 public interface DateOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:Date)
+    // @@protoc_insertion_point(interface_extends:weatherproto.Date)
     com.google.protobuf.MessageOrBuilder {
 
   /**

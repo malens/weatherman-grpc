@@ -4,11 +4,11 @@
 package edu.malens.grpc;
 
 /**
- * Protobuf type {@code City}
+ * Protobuf type {@code weatherproto.City}
  */
 public  final class City extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:City)
+    // @@protoc_insertion_point(message_implements:weatherproto.City)
     CityOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use City.newBuilder() to construct.
@@ -76,13 +76,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return edu.malens.grpc.WeatherProto.internal_static_City_descriptor;
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_City_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return edu.malens.grpc.WeatherProto.internal_static_City_fieldAccessorTable
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_City_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             edu.malens.grpc.City.class, edu.malens.grpc.City.Builder.class);
   }
@@ -278,21 +278,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code City}
+   * Protobuf type {@code weatherproto.City}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:City)
+      // @@protoc_insertion_point(builder_implements:weatherproto.City)
       edu.malens.grpc.CityOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return edu.malens.grpc.WeatherProto.internal_static_City_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_City_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return edu.malens.grpc.WeatherProto.internal_static_City_fieldAccessorTable
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_City_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               edu.malens.grpc.City.class, edu.malens.grpc.City.Builder.class);
     }
@@ -323,7 +323,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return edu.malens.grpc.WeatherProto.internal_static_City_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_City_descriptor;
     }
 
     @java.lang.Override
@@ -513,10 +513,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:City)
+    // @@protoc_insertion_point(builder_scope:weatherproto.City)
   }
 
-  // @@protoc_insertion_point(class_scope:City)
+  // @@protoc_insertion_point(class_scope:weatherproto.City)
   private static final edu.malens.grpc.City DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new edu.malens.grpc.City();

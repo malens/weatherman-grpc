@@ -4,7 +4,7 @@
 package edu.malens.grpc;
 
 public interface CityOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:City)
+    // @@protoc_insertion_point(interface_extends:weatherproto.City)
     com.google.protobuf.MessageOrBuilder {
 
   /**

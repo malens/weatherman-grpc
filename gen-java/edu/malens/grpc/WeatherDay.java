@@ -4,11 +4,11 @@
 package edu.malens.grpc;
 
 /**
- * Protobuf type {@code WeatherDay}
+ * Protobuf type {@code weatherproto.WeatherDay}
  */
 public  final class WeatherDay extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:WeatherDay)
+    // @@protoc_insertion_point(message_implements:weatherproto.WeatherDay)
     WeatherDayOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use WeatherDay.newBuilder() to construct.
@@ -89,13 +89,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return edu.malens.grpc.WeatherProto.internal_static_WeatherDay_descriptor;
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherDay_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return edu.malens.grpc.WeatherProto.internal_static_WeatherDay_fieldAccessorTable
+    return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherDay_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             edu.malens.grpc.WeatherDay.class, edu.malens.grpc.WeatherDay.Builder.class);
   }
@@ -103,21 +103,21 @@ private static final long serialVersionUID = 0L;
   public static final int DATE_FIELD_NUMBER = 1;
   private edu.malens.grpc.Date date_;
   /**
-   * <code>.Date date = 1;</code>
+   * <code>.weatherproto.Date date = 1;</code>
    * @return Whether the date field is set.
    */
   public boolean hasDate() {
     return date_ != null;
   }
   /**
-   * <code>.Date date = 1;</code>
+   * <code>.weatherproto.Date date = 1;</code>
    * @return The date.
    */
   public edu.malens.grpc.Date getDate() {
     return date_ == null ? edu.malens.grpc.Date.getDefaultInstance() : date_;
   }
   /**
-   * <code>.Date date = 1;</code>
+   * <code>.weatherproto.Date date = 1;</code>
    */
   public edu.malens.grpc.DateOrBuilder getDateOrBuilder() {
     return getDate();
@@ -126,14 +126,14 @@ private static final long serialVersionUID = 0L;
   public static final int STATE_FIELD_NUMBER = 2;
   private int state_;
   /**
-   * <code>.WeatherState state = 2;</code>
+   * <code>.weatherproto.WeatherState state = 2;</code>
    * @return The enum numeric value on the wire for state.
    */
   public int getStateValue() {
     return state_;
   }
   /**
-   * <code>.WeatherState state = 2;</code>
+   * <code>.weatherproto.WeatherState state = 2;</code>
    * @return The state.
    */
   public edu.malens.grpc.WeatherState getState() {
@@ -313,21 +313,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code WeatherDay}
+   * Protobuf type {@code weatherproto.WeatherDay}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:WeatherDay)
+      // @@protoc_insertion_point(builder_implements:weatherproto.WeatherDay)
       edu.malens.grpc.WeatherDayOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherDay_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherDay_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherDay_fieldAccessorTable
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherDay_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               edu.malens.grpc.WeatherDay.class, edu.malens.grpc.WeatherDay.Builder.class);
     }
@@ -364,7 +364,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return edu.malens.grpc.WeatherProto.internal_static_WeatherDay_descriptor;
+      return edu.malens.grpc.WeatherProto.internal_static_weatherproto_WeatherDay_descriptor;
     }
 
     @java.lang.Override
@@ -477,14 +477,14 @@ private static final long serialVersionUID = 0L;
     private com.google.protobuf.SingleFieldBuilderV3<
         edu.malens.grpc.Date, edu.malens.grpc.Date.Builder, edu.malens.grpc.DateOrBuilder> dateBuilder_;
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      * @return Whether the date field is set.
      */
     public boolean hasDate() {
       return dateBuilder_ != null || date_ != null;
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      * @return The date.
      */
     public edu.malens.grpc.Date getDate() {
@@ -495,7 +495,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      */
     public Builder setDate(edu.malens.grpc.Date value) {
       if (dateBuilder_ == null) {
@@ -511,7 +511,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      */
     public Builder setDate(
         edu.malens.grpc.Date.Builder builderForValue) {
@@ -525,7 +525,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      */
     public Builder mergeDate(edu.malens.grpc.Date value) {
       if (dateBuilder_ == null) {
@@ -543,7 +543,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      */
     public Builder clearDate() {
       if (dateBuilder_ == null) {
@@ -557,7 +557,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      */
     public edu.malens.grpc.Date.Builder getDateBuilder() {
       
@@ -565,7 +565,7 @@ private static final long serialVersionUID = 0L;
       return getDateFieldBuilder().getBuilder();
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      */
     public edu.malens.grpc.DateOrBuilder getDateOrBuilder() {
       if (dateBuilder_ != null) {
@@ -576,7 +576,7 @@ private static final long serialVersionUID = 0L;
       }
     }
     /**
-     * <code>.Date date = 1;</code>
+     * <code>.weatherproto.Date date = 1;</code>
      */
     private com.google.protobuf.SingleFieldBuilderV3<
         edu.malens.grpc.Date, edu.malens.grpc.Date.Builder, edu.malens.grpc.DateOrBuilder> 
@@ -594,14 +594,14 @@ private static final long serialVersionUID = 0L;
 
     private int state_ = 0;
     /**
-     * <code>.WeatherState state = 2;</code>
+     * <code>.weatherproto.WeatherState state = 2;</code>
      * @return The enum numeric value on the wire for state.
      */
     public int getStateValue() {
       return state_;
     }
     /**
-     * <code>.WeatherState state = 2;</code>
+     * <code>.weatherproto.WeatherState state = 2;</code>
      * @param value The enum numeric value on the wire for state to set.
      * @return This builder for chaining.
      */
@@ -611,7 +611,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.WeatherState state = 2;</code>
+     * <code>.weatherproto.WeatherState state = 2;</code>
      * @return The state.
      */
     public edu.malens.grpc.WeatherState getState() {
@@ -620,7 +620,7 @@ private static final long serialVersionUID = 0L;
       return result == null ? edu.malens.grpc.WeatherState.UNRECOGNIZED : result;
     }
     /**
-     * <code>.WeatherState state = 2;</code>
+     * <code>.weatherproto.WeatherState state = 2;</code>
      * @param value The state to set.
      * @return This builder for chaining.
      */
@@ -634,7 +634,7 @@ private static final long serialVersionUID = 0L;
       return this;
     }
     /**
-     * <code>.WeatherState state = 2;</code>
+     * <code>.weatherproto.WeatherState state = 2;</code>
      * @return This builder for chaining.
      */
     public Builder clearState() {
@@ -656,10 +656,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:WeatherDay)
+    // @@protoc_insertion_point(builder_scope:weatherproto.WeatherDay)
   }
 
-  // @@protoc_insertion_point(class_scope:WeatherDay)
+  // @@protoc_insertion_point(class_scope:weatherproto.WeatherDay)
   private static final edu.malens.grpc.WeatherDay DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new edu.malens.grpc.WeatherDay();
